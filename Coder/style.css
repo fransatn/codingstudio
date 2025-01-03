@@ -1,5 +1,5 @@
 * {
-  font-family: Montserrat;
+  font-family: "Montserrat";
 }
 
 h1 {
@@ -29,4 +29,13 @@ p {
   color: black;
   margin-right: 16px;
   border: 2px solid #ffc108;
+}
+
+.landing p {
+  margin-bottom: 30px;
+}
+
+nav > a {
+  color: #ffc108;
+  margin-left: 12px;
 }
