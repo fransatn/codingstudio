@@ -2,22 +2,26 @@
   font-family: "Montserrat";
 }
 
+/* Bagian Header */
 h1 {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 48px;
   margin: 0 0 16px 0;
 }
 
 a {
   text-decoration: none;
   color: black;
+  font-size: 24px;
 }
 
 p {
   color: #979797;
   margin: 0 0 16px 0;
+  font-size: 24px;
 }
 
+/* Section Landing */
 .btn {
   background-color: #ffc108;
   color: white;
@@ -31,11 +35,35 @@ p {
   border: 2px solid #ffc108;
 }
 
-.landing p {
-  margin-bottom: 30px;
+/* Bagian Header */
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 120px;
+}
+
+#header .h1 {
+  margin: 0;
+}
+
+/* Section Landing */
+#landing {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 16px;
+}
+#landing p {
+  margin-bottom: 32px;
 }
 
 nav > a {
   color: #ffc108;
   margin-left: 12px;
+}
+
+/* Seluruh Section */
+section {
+  padding: 64px 128;
 }
