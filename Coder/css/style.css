@@ -1,0 +1,168 @@
+/* Pengaturan Keseluruhan */
+* {
+  font-family: "Montserrat";
+}
+
+/* Bagian Header */
+h1 {
+  font-weight: 700;
+  font-size: 48px;
+  margin: 0 0 16px 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+p {
+  color: #979797;
+  margin: 0 0 16px 0;
+  font-size: 24px;
+}
+
+/* Bagian Header */
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 120px;
+}
+#header .h1 {
+  margin: 0;
+}
+
+/* Section Landing */
+.btn {
+  background-color: #ffc108;
+  color: white;
+  padding: 8px 24px;
+}
+.btn-alt {
+  background-color: white;
+  color: black;
+  margin-right: 16px;
+  border: 2px solid #ffc108;
+}
+
+/* Section Landing */
+#landing {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 20px;
+}
+#landing p {
+  margin-bottom: 32px;
+}
+#landing > div {
+  width: 50%;
+}
+
+/* Bagian Header Nav */
+nav > a {
+  color: #ffc108;
+  margin-left: 12px;
+}
+
+/* Seluruh Section */
+section {
+  padding: 64px 128;
+}
+
+/* Bagian Section 2 ID About */
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 16px;
+}
+#about > div {
+  width: 50%;
+}
+#about-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  margin-top: 72px;
+}
+.about-stats-item div {
+  width: 50px;
+  height: 10px;
+  background-color: #ffc108;
+  margin-bottom: 16px;
+}
+.about-stats-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Bagian Section 3 ID Service */
+.service-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.service-detail {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 128px;
+}
+
+/* Bagian Section 4 ID Contact */
+.contact-detail {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 72px;
+}
+.form-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 32px;
+  margin-top: 32px;
+  grid-template-areas:
+    "name subject"
+    "email phone"
+    "message message";
+}
+/* Grid Input Area */
+#input-name {
+  grid-area: name;
+}
+#input-subject {
+  grid-area: subject;
+}
+#input-email {
+  grid-area: email;
+}
+#input-phone {
+  grid-area: phone;
+}
+#input-message {
+  grid-area: message;
+}
+/* End Grid Input Area */
+form button {
+  border: none;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #ffc108;
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+}
+.input-group label {
+  font-weight: 700;
+  margin-bottom: 16px;
+  font-size: 24px;
+}
+.input-group input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  font-size: 20px;
+}

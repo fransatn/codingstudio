@@ -13,7 +13,7 @@
       rel="stylesheet"
     />
     <!-- Link CSS -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!-- Header -->
@@ -26,7 +26,7 @@
       </nav>
     </header>
 
-    <!-- Section 1-->
+    <!-- Section 1 Landing-->
     <section id="landing">
       <div>
         <h1>Lorem ipsum dolor sit amet consectetur</h1>
@@ -44,8 +44,8 @@
       </div>
     </section>
 
-    <!-- Section 2 -->
-    <section>
+    <!-- Section 2 About-->
+    <section id="about">
       <div>
         <img src="img/about.png" alt="About Image" />
       </div>
@@ -55,35 +55,36 @@
           For the last 5 years we always give the best to our client and we will
           always be the best
         </p>
-        <div>
-          <div>
+        <div id="about-stats">
+          <div class="about-stats-item">
             <h1>100+</h1>
             <div></div>
             <p>Experts</p>
           </div>
-          <div>
+          <div class="about-stats-item">
             <h1>300+</h1>
             <div></div>
             <p>Clients</p>
           </div>
-          <div>
+          <div class="about-stats-item">
             <h1>500+</h1>
-            <p>Project</p>
             <div></div>
+            <p>Project</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section>
-      <div>
+    <!-- Section 3 Service-->
+    <section id="service">
+      <div class="service-header">
         <div>
           <h1>Our Services</h1>
           <p>We have the best service to solve your problem</p>
         </div>
         <a href="" class="btn">Contact Us</a>
       </div>
-      <div>
+      <div class="service-detail">
         <div>
           <img src="img/service1.png" alt="Service 1 Image" />
           <h1>Web application</h1>
@@ -111,41 +112,40 @@
       </div>
     </section>
 
-    <section>
+    <!-- Section 4 Contact -->
+    <section id="contact">
       <h1>Contact Us</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
         tempore!
       </p>
-      <div>
-        <div>
-          <form action="">
-            <h1>Tell us your problem</h1>
-            <div>
-              <div>
-                <label for="">Name</label>
-                <input type="text" />
-              </div>
-              <div>
-                <label for="">Name</label>
-                <input type="text" />
-              </div>
-              <div>
-                <label for="">Name</label>
-                <input type="text" />
-              </div>
-              <div>
-                <label for="">Name</label>
-                <input type="text" />
-              </div>
-              <div>
-                <label for="">Name</label>
-                <input type="text" />
-              </div>
+      <div class="contact-detail">
+        <form action="">
+          <h1>Tell us your problem</h1>
+          <div class="form-group">
+            <div id="input-name" class="input-group">
+              <label for="">Name</label>
+              <input type="text" placeholder="Your Name" />
             </div>
-            <button>Submit</button>
-          </form>
-        </div>
+            <div id="input-subject" class="input-group">
+              <label for="">Subject</label>
+              <input type="text" placeholder="Your Subject" />
+            </div>
+            <div id="input-email" class="input-group">
+              <label for="">Email</label>
+              <input type="email" placeholder="Your Email" />
+            </div>
+            <div id="input-phone" class="input-group">
+              <label for="">Phone Number</label>
+              <input type="tel" placeholder="Your Phone Number" />
+            </div>
+            <div id="input-message" class="input-group">
+              <label for="">Message</label>
+              <input type="text" placeholder="Your Message" />
+            </div>
+          </div>
+          <button class="btn">Submit</button>
+        </form>
         <div>
           <h1>Our Location</h1>
           <iframe
