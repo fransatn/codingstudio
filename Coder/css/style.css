@@ -2,6 +2,17 @@
 * {
   font-family: "Montserrat";
 }
+/* Bagian html, body */
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* Seluruh Section */
+section {
+  padding: 64px 128px;
+}
 
 /* Bagian Header */
 h1 {
@@ -49,7 +60,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  column-gap: 20px;
+  column-gap: 16px;
 }
 #landing p {
   margin-bottom: 32px;
@@ -60,13 +71,7 @@ p {
 
 /* Bagian Header Nav */
 nav > a {
-  color: #ffc108;
   margin-left: 12px;
-}
-
-/* Seluruh Section */
-section {
-  padding: 64px 128;
 }
 
 /* Bagian Section 2 ID About */
@@ -107,6 +112,20 @@ section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 128px;
+  margin-top: 72px;
+}
+.service-detail-item {
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
+}
+.service-detail-item img {
+  width: 100%;
+}
+.service-detail-item h2 {
+  padding: 0 16px;
+}
+.service-detail-item p {
+  font-size: 16px;
+  padding: 0 16px;
 }
 
 /* Bagian Section 4 ID Contact */
@@ -114,6 +133,7 @@ section {
   display: flex;
   justify-content: space-between;
   margin-top: 72px;
+  column-gap: 128px;
 }
 .form-group {
   display: grid;
@@ -149,6 +169,11 @@ form {
   display: flex;
   flex-direction: column;
   border: 3px solid #ffc108;
+  padding: 64px 32px;
+}
+form h1 {
+  font-size: 32px;
+  text-align: center;
 }
 .input-group {
   display: flex;
@@ -165,4 +190,14 @@ form {
   outline: none;
   border-bottom: 1px solid black;
   font-size: 20px;
+}
+
+/* Bagian Footer */
+footer {
+  padding: 16px 128px;
+  background-color: #ffc108;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
