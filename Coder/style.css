@@ -65,6 +65,9 @@ section {
 nav > a {
   margin-left: 12px;
 }
+nav > a:hover {
+  color: #ffc108;
+}
 
 /* Bagian 2 Section Landing */
 #landing {
@@ -114,6 +117,19 @@ nav > a {
   align-items: center;
   justify-content: space-between;
 }
+.service-header h1 {
+  position: relative;
+}
+.service-header h1::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  background: url("./img/accent1.svg");
+  position: absolute;
+  left: -20px;
+  top: -10px;
+  z-index: -1;
+}
 .service-detail {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -141,6 +157,20 @@ nav > a {
   margin-top: 72px;
   column-gap: 128px;
 }
+#contact h1 {
+  position: relative;
+}
+#contact > h1::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  background: url("./img/accent2.svg");
+  left: -20px;
+  top: -10px;
+  z-index: -1;
+}
+/* Section Contact Bagian Form */
 form {
   display: flex;
   flex-direction: column;
@@ -153,6 +183,9 @@ form h1 {
 }
 form button {
   border: none;
+}
+form button:hover {
+  cursor: pointer;
 }
 .form-group {
   display: grid;
@@ -195,6 +228,9 @@ form button {
   outline: none;
   border-bottom: 1px solid black;
   font-size: 20px;
+}
+.input-group input:focus {
+  border-bottom: 2px solid #ffc108;
 }
 
 /* Bagian Footer */
