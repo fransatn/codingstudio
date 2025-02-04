@@ -55,6 +55,9 @@ section {
   align-items: center;
   justify-content: space-between;
   padding: 16px 128px;
+  position: sticky;
+  top: 0;
+  background-color: white;
 }
 #header h1 {
   margin: 0;
