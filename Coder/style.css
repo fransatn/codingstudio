@@ -61,6 +61,26 @@ section {
 }
 #header h1 {
   margin: 0;
+  animation: bounceIn 2s;
+}
+/* Animasi id Header h1 */
+@keyframes bounceIn {
+  0% {
+    filter: opacity(0);
+    transform: translateY(-20px);
+  }
+  35% {
+    filter: opacity(0.25);
+    transform: translateY(0);
+  }
+  70% {
+    filter: opacity(0.5);
+    transform: translateY(-10px);
+  }
+  100% {
+    filter: opacity(1);
+    transform: translateY(0);
+  }
 }
 nav > a {
   margin-left: 12px;
@@ -139,8 +159,15 @@ nav > a:hover {
 .service-detail-item {
   box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
 }
+.service-detail-item:hover {
+  transform: scale(1.15);
+}
+.service-detail-item img:hover {
+  filter: grayscale(0);
+}
 .service-detail-item img {
   width: 100%;
+  filter: grayscale(1);
 }
 .service-detail-item h2 {
   padding: 0 16px;
@@ -249,4 +276,42 @@ footer p {
 .social-icon {
   display: flex;
   gap: 32px;
+}
+
+/* Bagian Media Query */
+@media only screen and (max-width: 992px) {
+  #header,
+  #footer {
+    padding: 16px 32px;
+  }
+  section {
+    padding: 64px 32px;
+  }
+  #landing {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #landing > div {
+    width: 100%;
+  }
+  #about {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  #about > div {
+    width: 100%;
+  }
+  .service-detail {
+    gap: 16px;
+  }
+  .contact-detail {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 64px;
+  }
 }
