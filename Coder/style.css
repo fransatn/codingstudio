@@ -1,6 +1,8 @@
 /* Nagian Keseruhan html */
 * {
   font-family: "Montserrat";
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /* Bagian html dan body */
@@ -35,6 +37,10 @@ p {
 section {
   padding: 64px 128px;
 }
+img,
+iframe {
+  width: 100%;
+}
 
 /* Bagian tombol Class btn */
 .btn {
@@ -58,6 +64,7 @@ section {
   position: sticky;
   top: 0;
   background-color: white;
+  z-index: 5;
 }
 #header h1 {
   margin: 0;
@@ -184,6 +191,10 @@ nav > a:hover {
   margin-top: 72px;
   column-gap: 128px;
 }
+.contact-detail > div,
+.contact-detail > form {
+  width: 50%;
+}
 #contact h1 {
   position: relative;
 }
@@ -279,6 +290,18 @@ footer p {
 }
 
 /* Bagian Media Query */
+@media only screen and (max-width: 1200px) {
+  .service-detail {
+    gap: 24px;
+  }
+  .contact-detail {
+    gap: 24px;
+  }
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+}
 @media only screen and (max-width: 992px) {
   #header,
   #footer {
@@ -313,5 +336,9 @@ footer p {
     justify-content: center;
     align-items: center;
     row-gap: 64px;
+  }
+  .contact-detail form,
+  .contact-detail > div {
+    width: 100%;
   }
 }
